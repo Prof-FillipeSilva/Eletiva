@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+
+.container {
+  max-width: 880px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.field { margin-bottom: 16px; }
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #d6d9e0;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .2s ease;
+}
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: #2f8f3c;
+}
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  color: #6a7280;
+  font-size: .9rem;
+}
+
+.grid-2 { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
+.grid-3 { display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 720px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+.fieldset {
+  margin: 18px 0 8px;
+  padding: 16px;
+  border: 1.5px dashed #e2e5ec;
+  border-radius: 12px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  background: #2f8f3c;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .03s ease, filter .15s ease;
+}
+button[type="submit"]:hover { filter: brightness(1.05); }
+button[type="submit"]:active { transform: translateY(1px); }
+button[disabled] { opacity: .6; cursor: not-allowed; }
+
+#mensagem { margin-top: 14px; text-align: center; font-weight: 600; }
+.msg-ok { color: #1f7a2e; }
+.msg-erro { color: #b00020; }
