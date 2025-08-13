@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // ========= CONFIG =========
   // Cole aqui o URL do seu Apps Script implantado como Web App
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz3Vs1TCw7Pm7CH9OqmCC1fSSdTvSoC3lAr3a5JYg_YzxNjUXpRDj9F0sYQDraGAy0DPA/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbynONu43266_FLWzHm7f0j5zcd7lov6k_D0nJM1oQdXakuA2I-yjfjuNJM1N5mdwabeqA/exec";
 
   const TURMAS_POR_SERIE = {
     "8º ano": ["A", "B"],
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Urbanidade: desafios e oportunidades da cidade - Profº Willian"
   ];
 
-  const CAPACIDADE = { Fundamental: 44, "Médio": 31 };
+  const CAPACIDADE = { Fundamental: 41, "Médio": 30 };
 
   // ========= ELEMENTOS =========
   const form = document.getElementById("form-inscricao");
@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       limitesHint.textContent =
         nivel === "Fundamental"
-          ? "Limite por curso no Fundamental: 44 estudantes."
-          : "Limite por curso no Médio: 31 estudantes.";
+          ? "Limite por curso no Fundamental: 41 estudantes."
+          : "Limite por curso no Médio: 30 estudantes.";
     } catch (e) {
       console.error(e);
       setMsg("Erro ao carregar cursos. Tente novamente mais tarde.");
