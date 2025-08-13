@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Urbanidade: desafios e oportunidades da cidade - Profº Willian"
   ];
 
-  const CAPACIDADE = { Fundamental: 4, "Médio": 3 };
+  const CAPACIDADE = { Fundamental: 44, "Médio": 31 };
 
   // ========= ELEMENTOS =========
   const form = document.getElementById("form-inscricao");
