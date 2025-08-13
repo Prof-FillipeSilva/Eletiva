@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       limitesHint.textContent =
         nivel === "Fundamental"
-          ? "Limite por curso no Fundamental: 4 estudantes."
-          : "Limite por curso no Médio: 3 estudantes.";
+          ? "Limite por curso no Fundamental: 44 estudantes."
+          : "Limite por curso no Médio: 31 estudantes.";
     } catch (e) {
       console.error(e);
       setMsg("Erro ao carregar cursos. Tente novamente mais tarde.");
