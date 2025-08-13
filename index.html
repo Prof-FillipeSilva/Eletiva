@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscrição – Eletivas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Inscrição para as Eletivas - CEPI Santo Antônio do Descoberto - 2° semestre</h1>
+
+    <form id="form-inscricao" novalidate>
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" autocomplete="name" required />
+        <small class="hint">Use o nome completo que aparece na chamada de sala.</small>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="serie">Série</label>
+          <select id="serie" name="serie" required>
+            <option value="">Selecione a série</option>
+            <optgroup label="Ensino Fundamental">
+              <option value="8º ano">8º ano</option>
+              <option value="9º ano">9º ano</option>
+            </optgroup>
+            <optgroup label="Ensino Médio">
+              <option value="1ª série">1ª série</option>
+              <option value="2ª série">2ª série</option>
+              <option value="3ª série">3ª série</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="turma" id="turma-label" style="display:none;">Turma</label>
+          <select id="turma" name="turma" required style="display:none;"></select>
+        </div>
+      </div>
+
+      <fieldset class="fieldset">
+        <legend>Escolha 3 opções (todas diferentes)</legend>
+
+        <div class="grid-3">
+          <div class="field">
+            <label for="op1">Opção 1</label>
+            <select id="op1" name="op1" required></select>
+          </div>
+
+          <div class="field">
+            <label for="op2">Opção 2</label>
+            <select id="op2" name="op2" required></select>
+          </div>
+
+          <div class="field">
+            <label for="op3">Opção 3</label>
+            <select id="op3" name="op3" required></select>
+          </div>
+        </div>
+
+        <small class="hint" id="limites-hint">
+          Os cursos disponíveis e vagas variam conforme a série selecionada.
+        </small>
+      </fieldset>
+
+      <button type="submit" id="btn-enviar">Enviar inscrição</button>
+
+      <p id="mensagem" role="alert" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
